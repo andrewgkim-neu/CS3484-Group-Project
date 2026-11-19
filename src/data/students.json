@@ -1,0 +1,117 @@
+[
+  {
+    "id": "s1",
+    "role": "student",
+    "email": "alex.chen@northeastern.edu",
+    "password": "password",
+    "firstName": "Alex",
+    "lastName": "Chen",
+    "pronouns": "they/them",
+    "gradYear": 2027,
+    "major": "Computer Science",
+    "minor": "Business Administration",
+    "bio": "Third-year CS student interested in backend and infrastructure. Looking for a summer 2027 co-op.",
+    "targetCompanies": ["Google", "HubSpot", "Datadog"],
+    "targetRoles": ["Software Engineer", "Site Reliability Engineer"],
+    "skills": ["Java", "Python", "React", "SQL"],
+    "workHistory": [
+      {
+        "company": "Wayfair",
+        "title": "Software Engineer Co-op",
+        "startDate": "2026-01",
+        "endDate": "2026-06",
+        "description": "Built internal tooling for the catalog team."
+      }
+    ],
+    "resume": { "fileName": "alex_chen_resume.pdf", "uploadedAt": "2026-09-02T14:00:00.000Z" },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/example-alex",
+      "github": "https://github.com/example-alex"
+    },
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-08-15T12:00:00.000Z"
+  },
+  {
+    "id": "s2",
+    "role": "student",
+    "email": "priya.patel@northeastern.edu",
+    "password": "password",
+    "firstName": "Priya",
+    "lastName": "Patel",
+    "pronouns": "she/her",
+    "gradYear": 2026,
+    "major": "Data Science",
+    "minor": "Mathematics",
+    "bio": "Senior focused on ML and analytics. Previously co-oped in healthcare data.",
+    "targetCompanies": ["Moderna", "Spotify"],
+    "targetRoles": ["Data Scientist", "Machine Learning Engineer"],
+    "skills": ["Python", "PyTorch", "SQL", "Tableau"],
+    "workHistory": [
+      {
+        "company": "Boston Children's Hospital",
+        "title": "Data Analyst Co-op",
+        "startDate": "2025-07",
+        "endDate": "2025-12",
+        "description": "Built dashboards tracking patient outcomes."
+      }
+    ],
+    "resume": { "fileName": "priya_patel_resume.pdf", "uploadedAt": "2026-10-01T09:30:00.000Z" },
+    "links": { "linkedin": "https://www.linkedin.com/in/example-priya" },
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-08-20T12:00:00.000Z"
+  },
+  {
+    "id": "s3",
+    "role": "student",
+    "email": "jordan.rivera@northeastern.edu",
+    "password": "password",
+    "firstName": "Jordan",
+    "lastName": "Rivera",
+    "pronouns": "he/him",
+    "gradYear": 2028,
+    "major": "Business Administration",
+    "minor": "",
+    "bio": "Second-year business student concentrating in marketing. Curious about product management.",
+    "targetCompanies": ["HubSpot", "Amazon"],
+    "targetRoles": ["Product Manager", "Product Marketing Manager"],
+    "skills": ["Figma", "Excel", "Market Research"],
+    "workHistory": [],
+    "resume": null,
+    "links": {},
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-09-10T12:00:00.000Z"
+  },
+  {
+    "id": "s4",
+    "role": "student",
+    "email": "sam.okafor@northeastern.edu",
+    "password": "password",
+    "firstName": "Sam",
+    "lastName": "Okafor",
+    "pronouns": "",
+    "gradYear": 2027,
+    "major": "Mechanical Engineering",
+    "minor": "Physics",
+    "bio": "Interested in robotics and hardware. Built a combat robot with the NU Robotics club.",
+    "targetCompanies": ["Boston Dynamics", "iRobot"],
+    "targetRoles": ["Mechanical Engineer", "Robotics Engineer"],
+    "skills": ["SolidWorks", "MATLAB", "C++"],
+    "workHistory": [
+      {
+        "company": "Raytheon",
+        "title": "Mechanical Engineering Co-op",
+        "startDate": "2025-07",
+        "endDate": "2025-12",
+        "description": "Designed test fixtures for sensor assemblies."
+      }
+    ],
+    "resume": { "fileName": "sam_okafor_resume.pdf", "uploadedAt": "2026-07-12T16:00:00.000Z" },
+    "links": { "linkedin": "https://www.linkedin.com/in/example-sam" },
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-07-01T12:00:00.000Z"
+  }
+]

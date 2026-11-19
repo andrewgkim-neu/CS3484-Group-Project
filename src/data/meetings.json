@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mt1",
+    "slotId": "slot4",
+    "alumniId": "a5",
+    "studentId": "s1",
+    "start": "2026-11-21T16:00:00.000Z",
+    "end": "2026-11-21T16:30:00.000Z",
+    "topic": "New-grad roles at Datadog",
+    "location": "Zoom",
+    "status": "scheduled",
+    "createdAt": "2026-11-14T09:30:00.000Z"
+  },
+  {
+    "id": "mt2",
+    "slotId": "slot7",
+    "alumniId": "a3",
+    "studentId": "s2",
+    "start": "2026-11-26T20:00:00.000Z",
+    "end": "2026-11-26T20:30:00.000Z",
+    "topic": "ML interview prep",
+    "location": "Google Meet",
+    "status": "scheduled",
+    "createdAt": "2026-11-16T10:00:00.000Z"
+  }
+]

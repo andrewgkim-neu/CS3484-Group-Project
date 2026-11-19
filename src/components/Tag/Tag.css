@@ -1,0 +1,74 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  line-height: 1.5;
+  background: var(--color-neutral-soft);
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.tag--major {
+  background: var(--color-brand-soft);
+  color: var(--color-brand-hover);
+}
+.tag--skill {
+  background: var(--color-info-soft);
+  color: var(--color-info);
+}
+.tag--company {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.tag--tone-success {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+.tag--tone-info {
+  background: var(--color-info-soft);
+  color: var(--color-info);
+}
+.tag--tone-warning {
+  background: var(--color-warning-soft);
+  color: var(--color-warning);
+}
+.tag--tone-danger {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+.tag--tone-neutral {
+  background: var(--color-neutral-soft);
+  color: var(--color-text-muted);
+}
+
+.tag__remove {
+  display: inline-grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+}
+.tag__remove:hover {
+  background: rgb(0 0 0 / 0.1);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

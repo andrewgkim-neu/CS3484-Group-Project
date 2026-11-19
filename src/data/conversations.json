@@ -1,0 +1,91 @@
+[
+  {
+    "id": "c1",
+    "participantIds": ["s1", "a1"],
+    "messages": [
+      {
+        "id": "m1",
+        "senderId": "s1",
+        "type": "text",
+        "body": "Hi Maria! I saw your post about Google referrals. Would you be open to chatting?",
+        "createdAt": "2026-11-17T16:00:00.000Z"
+      },
+      {
+        "id": "m2",
+        "senderId": "a1",
+        "type": "text",
+        "body": "Of course! Send over the role you're interested in and your resume.",
+        "createdAt": "2026-11-17T17:12:00.000Z"
+      },
+      {
+        "id": "m3",
+        "senderId": "s1",
+        "type": "referral_request",
+        "body": "Thanks so much! Here are the details.",
+        "referral": {
+          "company": "Google",
+          "role": "Software Engineering Intern, Summer 2027",
+          "jobLink": "https://careers.google.com/jobs/example",
+          "resumeFileName": "alex_chen_resume.pdf",
+          "status": "pending",
+          "respondedAt": null
+        },
+        "createdAt": "2026-11-17T17:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "c2",
+    "participantIds": ["s1", "a5"],
+    "messages": [
+      {
+        "id": "m4",
+        "senderId": "a5",
+        "type": "text",
+        "body": "Hey Alex, thanks for the coffee chat request. Looking forward to it!",
+        "createdAt": "2026-11-14T10:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "c3",
+    "participantIds": ["s2", "a3"],
+    "messages": [
+      {
+        "id": "m5",
+        "senderId": "s2",
+        "type": "referral_request",
+        "body": "Hi Aisha, I'd love a referral for the ML internship.",
+        "referral": {
+          "company": "Spotify",
+          "role": "Machine Learning Intern",
+          "jobLink": "https://www.lifeatspotify.com/jobs/example",
+          "resumeFileName": "priya_patel_resume.pdf",
+          "status": "accepted",
+          "respondedAt": "2026-11-16T09:00:00.000Z"
+        },
+        "createdAt": "2026-11-15T20:00:00.000Z"
+      },
+      {
+        "id": "m6",
+        "senderId": "a3",
+        "type": "text",
+        "body": "Submitted! You should hear from a recruiter within a week or two.",
+        "createdAt": "2026-11-16T09:01:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "c4",
+    "participantIds": ["s3", "a1"],
+    "messages": [
+      {
+        "id": "m7",
+        "senderId": "s3",
+        "type": "text",
+        "body": "Hi Maria, any advice for a business major interested in tech?",
+        "createdAt": "2026-11-18T14:20:00.000Z"
+      }
+    ]
+  }
+]

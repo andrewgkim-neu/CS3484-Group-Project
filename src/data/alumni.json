@@ -1,0 +1,269 @@
+[
+  {
+    "id": "a1",
+    "role": "alumni",
+    "email": "maria.gonzalez@northeastern.edu",
+    "password": "password",
+    "firstName": "Maria",
+    "lastName": "Gonzalez",
+    "pronouns": "she/her",
+    "gradYear": 2019,
+    "major": "Computer Science",
+    "currentTitle": "Senior Software Engineer",
+    "currentCompany": "Google",
+    "location": "Cambridge, MA",
+    "bio": "Backend engineer on Google Cloud. Happy to review resumes and talk about the new-grad process.",
+    "jobHistory": [
+      {
+        "company": "Google",
+        "title": "Senior Software Engineer",
+        "startDate": "2022-03",
+        "endDate": null
+      },
+      {
+        "company": "Wayfair",
+        "title": "Software Engineer",
+        "startDate": "2019-07",
+        "endDate": "2022-02"
+      }
+    ],
+    "skills": ["Go", "Java", "Distributed Systems", "Kubernetes"],
+    "networkingStatus": "open_to_referrals",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/example-maria",
+      "github": "https://github.com/example-maria",
+      "website": ""
+    },
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-06-01T12:00:00.000Z"
+  },
+  {
+    "id": "a2",
+    "role": "alumni",
+    "email": "david.kim@northeastern.edu",
+    "password": "password",
+    "firstName": "David",
+    "lastName": "Kim",
+    "pronouns": "he/him",
+    "gradYear": 2016,
+    "major": "Business Administration",
+    "currentTitle": "Group Product Manager",
+    "currentCompany": "HubSpot",
+    "location": "Boston, MA",
+    "bio": "PM lead for HubSpot's CRM platform. Former co-op coordinator mentor.",
+    "jobHistory": [
+      {
+        "company": "HubSpot",
+        "title": "Group Product Manager",
+        "startDate": "2020-01",
+        "endDate": null
+      },
+      {
+        "company": "Amazon",
+        "title": "Product Manager",
+        "startDate": "2016-07",
+        "endDate": "2019-12"
+      }
+    ],
+    "skills": ["Product Strategy", "User Research", "SQL", "Roadmapping"],
+    "networkingStatus": "open_to_chat",
+    "links": { "linkedin": "https://www.linkedin.com/in/example-david" },
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-06-05T12:00:00.000Z"
+  },
+  {
+    "id": "a3",
+    "role": "alumni",
+    "email": "aisha.mohammed@northeastern.edu",
+    "password": "password",
+    "firstName": "Aisha",
+    "lastName": "Mohammed",
+    "pronouns": "she/her",
+    "gradYear": 2021,
+    "major": "Data Science",
+    "currentTitle": "Machine Learning Engineer",
+    "currentCompany": "Spotify",
+    "location": "New York, NY",
+    "bio": "Working on recommendation systems. Ask me about ML interviews.",
+    "jobHistory": [
+      {
+        "company": "Spotify",
+        "title": "Machine Learning Engineer",
+        "startDate": "2021-08",
+        "endDate": null
+      }
+    ],
+    "skills": ["Python", "PyTorch", "Recommender Systems", "Spark"],
+    "networkingStatus": "open_to_referrals",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/example-aisha",
+      "website": "https://example.com/aisha"
+    },
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-06-10T12:00:00.000Z"
+  },
+  {
+    "id": "a4",
+    "role": "alumni",
+    "email": "tom.nguyen@northeastern.edu",
+    "password": "password",
+    "firstName": "Tom",
+    "lastName": "Nguyen",
+    "pronouns": "he/him",
+    "gradYear": 2018,
+    "major": "Mechanical Engineering",
+    "currentTitle": "Robotics Engineer",
+    "currentCompany": "Boston Dynamics",
+    "location": "Waltham, MA",
+    "bio": "Designing actuators for legged robots. Co-op'd at iRobot twice.",
+    "jobHistory": [
+      {
+        "company": "Boston Dynamics",
+        "title": "Robotics Engineer",
+        "startDate": "2020-05",
+        "endDate": null
+      },
+      {
+        "company": "iRobot",
+        "title": "Mechanical Engineer",
+        "startDate": "2018-07",
+        "endDate": "2020-04"
+      }
+    ],
+    "skills": ["SolidWorks", "C++", "ROS", "Controls"],
+    "networkingStatus": "open_to_chat",
+    "links": { "linkedin": "https://www.linkedin.com/in/example-tom" },
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-06-12T12:00:00.000Z"
+  },
+  {
+    "id": "a5",
+    "role": "alumni",
+    "email": "rachel.levine@northeastern.edu",
+    "password": "password",
+    "firstName": "Rachel",
+    "lastName": "Levine",
+    "pronouns": "she/her",
+    "gradYear": 2014,
+    "major": "Computer Science",
+    "currentTitle": "Engineering Manager",
+    "currentCompany": "Datadog",
+    "location": "Boston, MA",
+    "bio": "Manage the APM ingestion team. Hiring interns every spring.",
+    "jobHistory": [
+      {
+        "company": "Datadog",
+        "title": "Engineering Manager",
+        "startDate": "2019-02",
+        "endDate": null
+      },
+      {
+        "company": "Akamai",
+        "title": "Software Engineer",
+        "startDate": "2014-07",
+        "endDate": "2019-01"
+      }
+    ],
+    "skills": ["Python", "Go", "Observability", "Leadership"],
+    "networkingStatus": "open_to_referrals",
+    "links": { "linkedin": "https://www.linkedin.com/in/example-rachel" },
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-06-15T12:00:00.000Z"
+  },
+  {
+    "id": "a6",
+    "role": "alumni",
+    "email": "kevin.brooks@northeastern.edu",
+    "password": "password",
+    "firstName": "Kevin",
+    "lastName": "Brooks",
+    "pronouns": "he/him",
+    "gradYear": 2020,
+    "major": "Business Administration",
+    "currentTitle": "Product Marketing Manager",
+    "currentCompany": "Amazon",
+    "location": "Seattle, WA",
+    "bio": "PMM for AWS developer tools. Busy this quarter but happy to answer messages.",
+    "jobHistory": [
+      {
+        "company": "Amazon",
+        "title": "Product Marketing Manager",
+        "startDate": "2020-07",
+        "endDate": null
+      }
+    ],
+    "skills": ["Go-to-Market", "Copywriting", "Analytics"],
+    "networkingStatus": "not_available",
+    "links": { "linkedin": "https://www.linkedin.com/in/example-kevin" },
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-06-20T12:00:00.000Z"
+  },
+  {
+    "id": "a7",
+    "role": "alumni",
+    "email": "lena.schmidt@northeastern.edu",
+    "password": "password",
+    "firstName": "Lena",
+    "lastName": "Schmidt",
+    "pronouns": "she/her",
+    "gradYear": 2022,
+    "major": "Data Science",
+    "currentTitle": "Data Scientist",
+    "currentCompany": "Moderna",
+    "location": "Cambridge, MA",
+    "bio": "Clinical trial analytics. Love talking about biotech careers for data people.",
+    "jobHistory": [
+      { "company": "Moderna", "title": "Data Scientist", "startDate": "2022-07", "endDate": null }
+    ],
+    "skills": ["R", "Python", "Biostatistics", "SQL"],
+    "networkingStatus": "open_to_chat",
+    "links": { "linkedin": "https://www.linkedin.com/in/example-lena" },
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-07-01T12:00:00.000Z"
+  },
+  {
+    "id": "a8",
+    "role": "alumni",
+    "email": "marcus.johnson@northeastern.edu",
+    "password": "password",
+    "firstName": "Marcus",
+    "lastName": "Johnson",
+    "pronouns": "he/him",
+    "gradYear": 2017,
+    "major": "Computer Science",
+    "currentTitle": "Site Reliability Engineer",
+    "currentCompany": "HubSpot",
+    "location": "Remote",
+    "bio": "SRE keeping HubSpot's infra up. Happy to talk about on-call life and infra careers.",
+    "jobHistory": [
+      {
+        "company": "HubSpot",
+        "title": "Site Reliability Engineer",
+        "startDate": "2019-09",
+        "endDate": null
+      },
+      {
+        "company": "Red Hat",
+        "title": "Associate Software Engineer",
+        "startDate": "2017-07",
+        "endDate": "2019-08"
+      }
+    ],
+    "skills": ["Linux", "Terraform", "AWS", "Python"],
+    "networkingStatus": "open_to_referrals",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/example-marcus",
+      "github": "https://github.com/example-marcus"
+    },
+    "emailVerified": true,
+    "onboarded": true,
+    "createdAt": "2026-07-05T12:00:00.000Z"
+  }
+]

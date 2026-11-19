@@ -1,0 +1,48 @@
+.dev-toolbar {
+  position: fixed;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  z-index: 200;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.dev-toolbar__toggle {
+  padding: var(--space-2) var(--space-3);
+  border: 0;
+  border-radius: var(--radius-full);
+  background: #1b1b1f;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+}
+
+.dev-toolbar__panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  width: 260px;
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  background: #1b1b1f;
+  color: #fff;
+  box-shadow: var(--shadow-md);
+}
+.dev-toolbar__label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.dev-toolbar__panel select,
+.dev-toolbar__panel button {
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid #555;
+  border-radius: var(--radius-sm);
+  background: #2c2c33;
+  color: #fff;
+  cursor: pointer;
+}

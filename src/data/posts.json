@@ -1,0 +1,52 @@
+[
+  {
+    "id": "p1",
+    "authorId": "a1",
+    "type": "referral",
+    "title": "Open to giving referrals at Google",
+    "body": "I can refer 2–3 students for Summer 2027 SWE internships. Message me with your resume and the role you're targeting.",
+    "company": "Google",
+    "tags": ["Software Engineering", "Internship"],
+    "createdAt": "2026-11-17T15:00:00.000Z"
+  },
+  {
+    "id": "p2",
+    "authorId": "a3",
+    "type": "referral",
+    "title": "Spotify ML internship referrals",
+    "body": "Our ML team is hiring interns. If you have recsys or NLP project experience, reach out.",
+    "company": "Spotify",
+    "tags": ["Machine Learning", "Internship"],
+    "createdAt": "2026-11-15T18:30:00.000Z"
+  },
+  {
+    "id": "p3",
+    "authorId": "a2",
+    "type": "advice",
+    "title": "Breaking into product management",
+    "body": "The #1 thing I look for in APM candidates: evidence you've shipped something end-to-end. Side projects count!",
+    "company": "HubSpot",
+    "tags": ["Product Management", "Advice"],
+    "createdAt": "2026-11-12T13:00:00.000Z"
+  },
+  {
+    "id": "p4",
+    "authorId": "a5",
+    "type": "hiring",
+    "title": "Datadog is hiring new grads in Boston",
+    "body": "We're opening new-grad SWE roles on my team next month. Happy to do coffee chats beforehand.",
+    "company": "Datadog",
+    "tags": ["Software Engineering", "New Grad"],
+    "createdAt": "2026-11-10T16:45:00.000Z"
+  },
+  {
+    "id": "p5",
+    "authorId": "a4",
+    "type": "advice",
+    "title": "Robotics portfolio tips",
+    "body": "Video of your robot working > photos of your robot. Keep clips under 30 seconds.",
+    "company": "Boston Dynamics",
+    "tags": ["Robotics", "Advice"],
+    "createdAt": "2026-11-05T11:00:00.000Z"
+  }
+]

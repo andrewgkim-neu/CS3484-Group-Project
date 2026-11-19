@@ -1,0 +1,58 @@
+[
+  {
+    "id": "slot1",
+    "alumniId": "a1",
+    "start": "2026-11-24T14:00:00.000Z",
+    "end": "2026-11-24T14:30:00.000Z",
+    "isBooked": false
+  },
+  {
+    "id": "slot2",
+    "alumniId": "a1",
+    "start": "2026-11-24T15:00:00.000Z",
+    "end": "2026-11-24T15:30:00.000Z",
+    "isBooked": false
+  },
+  {
+    "id": "slot3",
+    "alumniId": "a1",
+    "start": "2026-12-01T17:00:00.000Z",
+    "end": "2026-12-01T17:30:00.000Z",
+    "isBooked": false
+  },
+  {
+    "id": "slot4",
+    "alumniId": "a5",
+    "start": "2026-11-21T16:00:00.000Z",
+    "end": "2026-11-21T16:30:00.000Z",
+    "isBooked": true
+  },
+  {
+    "id": "slot5",
+    "alumniId": "a5",
+    "start": "2026-11-25T18:00:00.000Z",
+    "end": "2026-11-25T18:30:00.000Z",
+    "isBooked": false
+  },
+  {
+    "id": "slot6",
+    "alumniId": "a2",
+    "start": "2026-11-23T19:00:00.000Z",
+    "end": "2026-11-23T19:30:00.000Z",
+    "isBooked": false
+  },
+  {
+    "id": "slot7",
+    "alumniId": "a3",
+    "start": "2026-11-26T20:00:00.000Z",
+    "end": "2026-11-26T20:30:00.000Z",
+    "isBooked": true
+  },
+  {
+    "id": "slot8",
+    "alumniId": "a4",
+    "start": "2026-12-02T15:00:00.000Z",
+    "end": "2026-12-02T15:30:00.000Z",
+    "isBooked": false
+  }
+]
