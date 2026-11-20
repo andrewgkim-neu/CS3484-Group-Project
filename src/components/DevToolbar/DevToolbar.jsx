@@ -26,8 +26,7 @@ export default function DevToolbar() {
   const handleSwitch = async (e) => {
     const id = e.target.value
     if (!id) {
-      await logout()
-      navigate(paths.landing)
+      await logout({ redirectTo: paths.landing })
     } else {
       await switchUser(id)
       navigate(paths.home)

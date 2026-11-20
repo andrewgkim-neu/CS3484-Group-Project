@@ -4,7 +4,7 @@ export default function StudentOnboardingPage() {
   return (
     <Placeholder
       title="Student onboarding"
-      owner="Person 2"
+      owner="Aidan"
       todo={[
         'Grad year, major',
         'Work history',

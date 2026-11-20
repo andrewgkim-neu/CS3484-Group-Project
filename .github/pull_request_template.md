@@ -13,7 +13,8 @@
 - [ ] Uses shared components and CSS variables
 - [ ] Works when switching between a student and an alum (Dev toolbar)
 - [ ] Keyboard accessible, and inputs have labels
-- [ ] `npm run lint` and `npm run build` pass
+- [ ] `npm run lint`, `npm run test:run`, and `npm run build` pass
+- [ ] Added or updated tests for my changes
 
 ## Shared files changed (if any)
 

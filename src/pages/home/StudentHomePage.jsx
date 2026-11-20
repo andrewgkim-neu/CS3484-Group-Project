@@ -4,7 +4,7 @@ export default function StudentHomePage() {
   return (
     <Placeholder
       title="Student home"
-      owner="Person 3"
+      owner="Kevin"
       todo={['Suggested alumni (getSuggestedAlumni)', 'Feed of alumni posts (getPosts)']}
     />
   )

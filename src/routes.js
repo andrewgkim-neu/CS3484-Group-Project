@@ -4,7 +4,7 @@
 //   <Button to={paths.chat(alum.id)}>Message</Button>
 //   navigate(paths.profile(user.id))
 //
-// HANDOFF CONTRACT (Person 4 → Person 5):
+// HANDOFF CONTRACT (Lok Ye → Christina):
 //   Message button        → paths.chat(otherUserId)      e.g. /chat/a1
 //   Schedule Coffee button → paths.schedule(alumniId)    e.g. /schedule/a1
 // The chat/schedule pages read :userId from the URL with useParams().

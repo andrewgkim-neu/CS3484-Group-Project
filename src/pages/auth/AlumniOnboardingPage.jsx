@@ -4,7 +4,7 @@ export default function AlumniOnboardingPage() {
   return (
     <Placeholder
       title="Alumni onboarding"
-      owner="Person 2"
+      owner="Aidan"
       todo={[
         'Job titles, major, skills (TagInput)',
         'Networking status (NETWORKING_STATUSES)',

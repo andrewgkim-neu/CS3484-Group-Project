@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, NavLink, useNavigate } from 'react-router'
+import { Link, NavLink } from 'react-router'
 import { APP_NAME } from '../../constants'
 import { useSession } from '../../context/SessionContext'
 import { paths } from '../../routes'
@@ -30,15 +30,11 @@ function linksFor({ isStudent, isAlumni }) {
 export default function NavBar() {
   const session = useSession()
   const { user, isLoggedIn, logout } = session
-  const navigate = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false)
 
   const links = user?.onboarded ? linksFor(session) : []
 
-  const handleLogout = async () => {
-    await logout()
-    navigate(paths.landing)
-  }
+  const handleLogout = () => logout({ redirectTo: paths.landing })
 
   return (
     <header className="navbar">

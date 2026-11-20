@@ -4,7 +4,7 @@ export default function SearchPage() {
   return (
     <Placeholder
       title="Find alumni"
-      owner="Person 4"
+      owner="Lok Ye"
       todo={[
         'Filters: major, keywords, company, job role',
         'Results list (searchAlumni + ProfileCard)',

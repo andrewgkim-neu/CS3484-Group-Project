@@ -9,22 +9,22 @@ import { paths } from './routes'
 
 import NotFoundPage from './pages/NotFoundPage'
 import StyleguidePage from './pages/StyleguidePage'
-// Person 2: auth + onboarding
+// Aidan: auth + onboarding
 import AlumniOnboardingPage from './pages/auth/AlumniOnboardingPage'
 import LoginPage from './pages/auth/LoginPage'
 import SignupPage from './pages/auth/SignupPage'
 import StudentOnboardingPage from './pages/auth/StudentOnboardingPage'
 import VerifyEmailPage from './pages/auth/VerifyEmailPage'
-// Person 3: home + posts
+// Kevin: home + posts
 import CreatePostPage from './pages/home/CreatePostPage'
 import HomePage from './pages/home/HomePage'
 import LandingPage from './pages/landing/LandingPage'
-// Person 4: search + profiles
+// Lok Ye: search + profiles
 import EditProfilePage from './pages/profile/EditProfilePage'
 import MyProfilePage from './pages/profile/MyProfilePage'
 import ProfilePage from './pages/profile/ProfilePage'
 import SearchPage from './pages/search/SearchPage'
-// Person 5: messaging + calendar
+// Christina: messaging + calendar
 import CalendarPage from './pages/calendar/CalendarPage'
 import ScheduleCoffeePage from './pages/calendar/ScheduleCoffeePage'
 import ChatPage from './pages/chat/ChatPage'

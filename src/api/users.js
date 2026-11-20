@@ -31,7 +31,7 @@ export async function getStudents() {
 
 /**
  * Search alumni. Every filter is optional; empty filters are ignored.
- * (Person 4 owns the search UI and may change this filtering.)
+ * (Lok Ye owns the search UI and may change this filtering.)
  * @param {{ query?: string, major?: string, company?: string, role?: string, networkingStatus?: string }} filters
  *   query   – free text matched against name, title, company, bio, skills
  *   company – matches current company or any past company
@@ -73,7 +73,7 @@ export async function searchAlumni(filters = {}) {
 
 /**
  * Basic "suggested alumni" for a student: scores alumni by shared major,
- * target companies, and target roles. (Person 3 owns the home page and may
+ * target companies, and target roles. (Kevin owns the home page and may
  * change this scoring.)
  * Each result has an extra `matchReasons: string[]` field.
  */

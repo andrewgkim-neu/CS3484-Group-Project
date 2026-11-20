@@ -5,7 +5,16 @@
 // `user` is null when logged out. `loading` is true only during the first
 // check on page load.
 
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
+import {
+  createContext,
+  startTransition,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from 'react'
+import { useNavigate } from 'react-router'
 import * as api from '../api'
 import { ROLES } from '../constants'
 
@@ -14,6 +23,7 @@ const SessionContext = createContext(null)
 export function SessionProvider({ children }) {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
+  const navigate = useNavigate()
 
   const refreshUser = useCallback(async () => {
     const current = await api.getCurrentUser()
@@ -56,9 +66,18 @@ export function SessionProvider({ children }) {
         setUser(u)
         return u
       },
-      logout: async () => {
+      /**
+       * Log out. Pass `redirectTo` to go somewhere afterwards, e.g.
+       * logout({ redirectTo: paths.landing }). Clearing the user and changing
+       * the URL happen in one update; otherwise the route guard would see a
+       * logged-out user on a protected page and bounce them to /login first.
+       */
+      logout: async ({ redirectTo } = {}) => {
         await api.logout()
-        setUser(null)
+        startTransition(() => {
+          setUser(null)
+          if (redirectTo) navigate(redirectTo, { replace: true })
+        })
       },
       /** DEV ONLY: switch to any user without a password. */
       switchUser: async (userId) => {
@@ -67,7 +86,7 @@ export function SessionProvider({ children }) {
         return u
       },
     }),
-    [user, loading, refreshUser],
+    [user, loading, refreshUser, navigate],
   )
 
   return <SessionContext.Provider value={value}>{children}</SessionContext.Provider>

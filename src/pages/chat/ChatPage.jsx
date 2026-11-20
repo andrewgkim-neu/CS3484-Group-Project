@@ -7,7 +7,7 @@ export default function ChatPage() {
   return (
     <Placeholder
       title="Messages"
-      owner="Person 5"
+      owner="Christina"
       todo={[
         'Conversation list (getConversations)',
         'Thread with the user from the URL (getOrCreateConversation(me, userId))',

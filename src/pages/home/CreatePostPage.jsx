@@ -4,7 +4,7 @@ export default function CreatePostPage() {
   return (
     <Placeholder
       title="Create a post"
-      owner="Person 3"
+      owner="Kevin"
       todo={[
         'Post form: type, title, body, company, tags',
         'Save with createPost, then go to /home',

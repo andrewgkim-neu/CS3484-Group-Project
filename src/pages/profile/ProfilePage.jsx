@@ -7,7 +7,7 @@ export default function ProfilePage() {
   return (
     <Placeholder
       title="Profile"
-      owner="Person 4"
+      owner="Lok Ye"
       todo={[
         'Load the user with getUser(userId)',
         'Show their profile details',

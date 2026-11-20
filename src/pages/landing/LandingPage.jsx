@@ -4,7 +4,7 @@ export default function LandingPage() {
   return (
     <Placeholder
       title="Welcome"
-      owner="Person 3"
+      owner="Kevin"
       todo={[
         'Landing hero for logged-out visitors',
         'Explain the value for students and alumni',

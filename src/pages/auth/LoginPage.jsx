@@ -4,7 +4,7 @@ export default function LoginPage() {
   return (
     <Placeholder
       title="Log in"
-      owner="Person 2"
+      owner="Aidan"
       todo={[
         'Email + password form (use useSession().login)',
         'Show API errors',

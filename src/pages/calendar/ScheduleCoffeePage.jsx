@@ -7,7 +7,7 @@ export default function ScheduleCoffeePage() {
   return (
     <Placeholder
       title="Schedule coffee"
-      owner="Person 5"
+      owner="Christina"
       todo={[
         "Show the alum's open slots (getAvailability(userId))",
         'Student picks one → createMeeting({ slotId, studentId })',

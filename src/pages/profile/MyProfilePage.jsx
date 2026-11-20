@@ -4,7 +4,7 @@ export default function MyProfilePage() {
   return (
     <Placeholder
       title="My profile"
-      owner="Person 4"
+      owner="Lok Ye"
       todo={["Show the logged-in user's profile (useSession().user)", 'Link to /me/edit']}
     />
   )

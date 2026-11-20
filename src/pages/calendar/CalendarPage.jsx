@@ -4,7 +4,7 @@ export default function CalendarPage() {
   return (
     <Placeholder
       title="Calendar"
-      owner="Person 5"
+      owner="Christina"
       todo={[
         'Show meetings (getMeetings)',
         'Alumni: manage availability slots (getAvailability, addAvailabilitySlot, removeAvailabilitySlot)',

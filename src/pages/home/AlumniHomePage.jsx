@@ -4,7 +4,7 @@ export default function AlumniHomePage() {
   return (
     <Placeholder
       title="Alumni home"
-      owner="Person 3"
+      owner="Kevin"
       todo={[
         'Incoming requests (getPendingReferralRequests, getMeetings)',
         'Recent messages (getConversations)',

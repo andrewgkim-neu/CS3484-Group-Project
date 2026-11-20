@@ -4,7 +4,7 @@ export default function SignupPage() {
   return (
     <Placeholder
       title="Create account"
-      owner="Person 2"
+      owner="Aidan"
       todo={[
         'Choose student or alum',
         'Require an @northeastern.edu email (isNortheasternEmail)',

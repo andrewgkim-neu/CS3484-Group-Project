@@ -16,6 +16,8 @@ import availability from '../data/availability.json'
 import meetings from '../data/meetings.json'
 
 const STORAGE_KEY = 'hc:db'
+// No artificial delay when running automated tests.
+const IS_TEST = import.meta.env.MODE === 'test'
 const SIMULATED_LATENCY_MS = 200
 
 function buildSeed() {
@@ -86,6 +88,7 @@ export function resetDb() {
 
 /** Wait a bit so loading states are visible, like a real network call. */
 export function delay(ms = SIMULATED_LATENCY_MS) {
+  if (IS_TEST) return Promise.resolve()
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
