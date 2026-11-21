@@ -6,7 +6,8 @@
 //
 // HANDOFF CONTRACT (Lok Ye → Christina):
 //   Message button        → paths.chat(otherUserId)      e.g. /chat/a1
-//   Schedule Coffee button → paths.schedule(alumniId)    e.g. /schedule/a1
+//   Schedule Coffee Chat   → paths.schedule(studentId)   e.g. /schedule/s1
+//   (alumni viewing a student; only alumni can open /schedule, see F-G5)
 // The chat/schedule pages read :userId from the URL with useParams().
 
 export const paths = {
@@ -28,7 +29,7 @@ export const paths = {
   chatList: '/chat',
   chat: (userId = ':userId') => `/chat/${userId}`,
   calendar: '/calendar',
-  schedule: (alumniId = ':userId') => `/schedule/${alumniId}`,
+  schedule: (studentId = ':userId') => `/schedule/${studentId}`,
 
   styleguide: '/styleguide',
 }

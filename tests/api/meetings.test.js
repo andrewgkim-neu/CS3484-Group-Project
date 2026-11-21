@@ -1,3 +1,8 @@
+// NOTE: these tests cover the original slot-booking API (students book an alum's open
+// slot). After prototype testing (TF2) the design changed so that only alumni send
+// coffee-chat invites and students accept or decline (requirements F-G1–F-G5, DR6).
+// The invite API and its tests will replace the booking tests below. Cancelling a
+// meeting (F-H3) stays the same.
 import { describe, expect, it } from 'vitest'
 import {
   addAvailabilitySlot,
@@ -83,7 +88,7 @@ describe('scheduling coffee', () => {
     })
   })
 
-  it('cancelling frees the slot and hides the meeting', async () => {
+  it('F-H3: cancelling frees the slot and hides the meeting', async () => {
     const meeting = await createMeeting({ slotId: 'slot1', studentId: 's1' })
     await cancelMeeting(meeting.id)
     expect((await getAvailability('a1')).map((s) => s.id)).toContain('slot1')

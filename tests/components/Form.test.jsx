@@ -5,12 +5,12 @@ import { describe, expect, it } from 'vitest'
 import { Select, TagInput, TextField } from '../../src/components'
 
 describe('TextField', () => {
-  it('is reachable by its label', () => {
+  it('IR3: is reachable by its label', () => {
     render(<TextField label="Email" />)
     expect(screen.getByLabelText('Email')).toBeInstanceOf(HTMLInputElement)
   })
 
-  it('announces errors to screen readers', () => {
+  it('IR6: announces errors to screen readers', () => {
     render(<TextField label="Email" error="Must be a Northeastern email" />)
     const input = screen.getByLabelText('Email')
     expect(input).toHaveAttribute('aria-invalid', 'true')

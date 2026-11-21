@@ -9,7 +9,7 @@ import { currentPath, renderApp } from '../helpers/renderApp'
 const expectPath = (path) => waitFor(() => expect(currentPath()).toBe(path))
 
 describe('route guards', () => {
-  it('sends logged-out users to /login', async () => {
+  it('F-A3: sends logged-out users to /login', async () => {
     renderApp('/home')
     await expectPath('/login')
   })
@@ -19,7 +19,7 @@ describe('route guards', () => {
     await expectPath('/home')
   })
 
-  it('sends unverified users to /verify', async () => {
+  it('F-A7: sends unverified users to /verify', async () => {
     const user = await signup({
       email: 'fresh@northeastern.edu',
       password: 'password123',
@@ -46,9 +46,19 @@ describe('route guards', () => {
     await expectPath('/home')
   })
 
-  it('keeps students out of alumni-only pages', async () => {
+  it('F-G5, CR4: keeps students out of alumni-only pages', async () => {
     renderApp('/posts/new', { as: 's1' })
     await expectPath('/home')
+  })
+
+  it('F-G5: students cannot open the coffee-chat scheduling page', async () => {
+    renderApp('/schedule/s2', { as: 's1' })
+    await expectPath('/home')
+  })
+
+  it('F-E3: alumni can open the coffee-chat scheduling page for a student', async () => {
+    renderApp('/schedule/s1', { as: 'a1' })
+    await expectPath('/schedule/s1')
   })
 
   it('passes the :userId URL param through to the chat page', async () => {
@@ -71,19 +81,19 @@ describe('nav bar', () => {
     expect(await within(nav()).findByRole('link', { name: 'Sign up' })).toBeInTheDocument()
   })
 
-  it('shows student links for a student', async () => {
+  it('IR9: shows student links for a student', async () => {
     renderApp('/home', { as: 's1' })
     expect(await within(nav()).findByRole('link', { name: 'Find alumni' })).toBeInTheDocument()
     expect(within(nav()).queryByRole('link', { name: 'New post' })).not.toBeInTheDocument()
   })
 
-  it('shows alumni links for an alum', async () => {
+  it('IR9: shows alumni links for an alum', async () => {
     renderApp('/home', { as: 'a1' })
     expect(await within(nav()).findByRole('link', { name: 'New post' })).toBeInTheDocument()
     expect(within(nav()).queryByRole('link', { name: 'Find alumni' })).not.toBeInTheDocument()
   })
 
-  it('logs out and returns to the landing page', async () => {
+  it('F-A9: logs out and returns to the landing page', async () => {
     renderApp('/home', { as: 's1' })
     await userEvent.click(await within(nav()).findByRole('button', { name: 'Log out' }))
     await expectPath('/')

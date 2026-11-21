@@ -61,12 +61,12 @@ export default function App() {
         {/* Students only */}
         <Route element={<RequireAuth role={ROLES.STUDENT} />}>
           <Route path={paths.search} element={<SearchPage />} />
-          <Route path={paths.schedule()} element={<ScheduleCoffeePage />} />
         </Route>
 
-        {/* Alumni only */}
+        {/* Alumni only. Only alumni send coffee-chat invites (requirement F-G5). */}
         <Route element={<RequireAuth role={ROLES.ALUMNI} />}>
           <Route path={paths.newPost} element={<CreatePostPage />} />
+          <Route path={paths.schedule()} element={<ScheduleCoffeePage />} />
         </Route>
 
         <Route path={paths.styleguide} element={<StyleguidePage />} />

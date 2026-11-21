@@ -11,8 +11,8 @@ export default function ProfilePage() {
       todo={[
         'Load the user with getUser(userId)',
         'Show their profile details',
-        'Message button → paths.chat(userId)',
-        'Schedule Coffee button (alumni only) → paths.schedule(userId)',
+        'Send Message button (with a one-line description) → paths.chat(userId)',
+        'Schedule Coffee Chat button (alum viewing a student only) → paths.schedule(userId)',
       ]}
     >
       <p className="text-muted">

@@ -1,6 +1,6 @@
 // App-wide constants. Import from here instead of hard-coding strings in pages.
 
-export const APP_NAME = 'Husky Connect'
+export const APP_NAME = 'AlumNU'
 
 export const ROLES = {
   STUDENT: 'student',
