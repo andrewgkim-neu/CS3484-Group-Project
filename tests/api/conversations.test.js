@@ -10,13 +10,13 @@ import {
 } from '../../src/api'
 
 describe('conversations', () => {
-  it('lists a user’s conversations, most recent first, with the other person attached', async () => {
+  it('F-F1: lists a user’s conversations, most recent first, with the other person attached', async () => {
     const convos = await getConversations('s1')
     expect(convos.map((c) => c.otherUser.id)).toEqual(['a1', 'a5'])
     expect(convos[0].lastMessage).toBeTruthy()
   })
 
-  it('creates a conversation once and finds the same one from either side', async () => {
+  it('F-E2: creates a conversation once and finds the same one from either side', async () => {
     const a = await getOrCreateConversation('s1', 'a2')
     const b = await getOrCreateConversation('a2', 's1')
     expect(a.id).toBe(b.id)
@@ -33,7 +33,7 @@ describe('conversations', () => {
 })
 
 describe('sendMessage', () => {
-  it('adds a text message to the thread', async () => {
+  it('F-F5: adds a text message to the thread', async () => {
     const { id } = await getOrCreateConversation('s1', 'a2')
     await sendMessage({ conversationId: id, senderId: 's1', body: '  Hello!  ' })
     const convo = await getConversation(id, 'a2')
@@ -41,7 +41,7 @@ describe('sendMessage', () => {
     expect(convo.messages[0]).toMatchObject({ senderId: 's1', type: 'text', body: 'Hello!' })
   })
 
-  it('rejects empty messages', async () => {
+  it('F-F5: rejects empty messages', async () => {
     await expect(
       sendMessage({ conversationId: 'c1', senderId: 's1', body: '   ' }),
     ).rejects.toThrow()
@@ -65,7 +65,7 @@ describe('referral requests', () => {
     ...overrides,
   })
 
-  it('sends a structured, pending referral request', async () => {
+  it('F-F8, DR7: sends a structured, pending referral request', async () => {
     const msg = await sendReferralRequest(request())
     expect(msg.type).toBe('referral_request')
     expect(msg.referral).toMatchObject({
@@ -77,17 +77,17 @@ describe('referral requests', () => {
     expect(pending.map((p) => p.message.id)).toContain(msg.id)
   })
 
-  it('requires company and role', async () => {
+  it('F-F8: requires company and role', async () => {
     await expect(sendReferralRequest(request({ company: '' }))).rejects.toThrow()
   })
 
-  it('only lets students request referrals', async () => {
+  it('F-F8, CR4: only lets students request referrals', async () => {
     await expect(sendReferralRequest(request({ senderId: 'a5' }))).rejects.toMatchObject({
       status: 403,
     })
   })
 
-  it.each(['accepted', 'declined'])('lets the alum mark a request %s', async (status) => {
+  it.each(['accepted', 'declined'])('F-F9: lets the alum mark a request %s', async (status) => {
     const msg = await sendReferralRequest(request())
     const updated = await respondToReferral({
       conversationId: 'c2',
@@ -102,7 +102,7 @@ describe('referral requests', () => {
     )
   })
 
-  it('does not let the student answer their own request', async () => {
+  it('F-F9: does not let the student answer their own request', async () => {
     const msg = await sendReferralRequest(request())
     await expect(
       respondToReferral({

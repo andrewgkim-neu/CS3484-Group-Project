@@ -104,21 +104,30 @@ export default function StyleguidePage() {
               <ProfileCard
                 user={alumni[0]}
                 actions={
-                  <>
-                    <Button size="sm" to={paths.chat(alumni[0].id)}>
-                      Message
-                    </Button>
-                    <Button size="sm" variant="secondary" to={paths.schedule(alumni[0].id)}>
-                      Schedule coffee
-                    </Button>
-                  </>
+                  <Button size="sm" to={paths.chat(alumni[0].id)}>
+                    Send Message
+                  </Button>
                 }
               />
             )}
             {alumni[1] && (
               <ProfileCard user={alumni[1]} footer="Also majored in Business Administration" />
             )}
-            {students[0] && <ProfileCard user={students[0]} />}
+            {students[0] && (
+              <ProfileCard
+                user={students[0]}
+                actions={
+                  <>
+                    <Button size="sm" to={paths.chat(students[0].id)}>
+                      Message
+                    </Button>
+                    <Button size="sm" variant="secondary" to={paths.schedule(students[0].id)}>
+                      Schedule Coffee Chat
+                    </Button>
+                  </>
+                }
+              />
+            )}
             {alumni[2] && <ProfileCard user={alumni[2]} compact />}
           </div>
         )}

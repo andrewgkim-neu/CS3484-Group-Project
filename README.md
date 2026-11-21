@@ -1,10 +1,10 @@
-# CS3484-Group-Project: Northeastern Alumni Connection
+# AlumNU: Northeastern Alumni Connection
 
-A web app that connects Northeastern students with alumni for referrals, career advice, and coffee chats. Students build a profile, find alumni by major, company, or role, message them, request referrals, and book coffee chats from an alum's open time slots. Alumni post referral and hiring opportunities, respond to requests, and manage their availability.
+A web app that connects Northeastern students with alumni for referrals, career advice, and coffee chats. Students build a profile, find alumni by major, company, or role, message them, and request referrals. Alumni post referral and hiring opportunities, respond to requests, and invite students to coffee chats at a date and time they choose.
 
 Built with **React 19 + Vite + React Router 7**, in plain JavaScript and plain CSS. There is no real backend: all data comes from a fake API (`src/api`) backed by JSON files and saved in your browser's localStorage.
 
-See **[ARCHITECTURE.md](ARCHITECTURE.md)** for the system design: components, how they connect, and key design decisions.
+See **[ARCHITECTURE.md](ARCHITECTURE.md)** for the system design: components, how they connect, and key design decisions. See **[docs/REQUIREMENTS.md](docs/REQUIREMENTS.md)** for the testable requirements the interface is built and validated against.
 
 ## Team
 
@@ -33,7 +33,7 @@ See **[ARCHITECTURE.md](ARCHITECTURE.md)** for the system design: components, ho
 **Lok Ye: search and profiles**
 - Build alumni search with filters for major, keywords, company, and job role.
 - Build the search results list.
-- Build the page for viewing someone else's profile, with Message and Schedule Coffee buttons.
+- Build the page for viewing someone else's profile: Send Message for everyone, plus Schedule Coffee Chat when an alum views a student.
 - Build the page for viewing and editing your own profile, reusing Aidan's form components.
 - Agree with Christina on how the profile buttons hand off to chat and scheduling (e.g., Message goes to `/chat/:userId`).
 
@@ -41,7 +41,7 @@ See **[ARCHITECTURE.md](ARCHITECTURE.md)** for the system design: components, ho
 - Build the chat page: conversation list, message thread, and sending messages.
 - Build referral requests as a structured message type (company, role, job link, attached resume) that alumni can accept or decline.
 - Build the calendar page.
-- Build the "schedule coffee" flow: alumni set available time slots, students pick one, and the meeting appears on both calendars.
+- Build the "schedule coffee chat" flow: an alum picks a date and time and sends an invite, the student accepts or declines, and accepted chats appear on both calendars.
 
 ## Getting started
 
@@ -202,7 +202,7 @@ Edited a JSON seed file? The app notices and re-seeds automatically on the next 
 ## Handoff contracts
 
 - **Profile → Chat (Lok Ye → Christina):** the Message button links to `paths.chat(userId)` (`/chat/a1`). The chat page reads `userId` with `useParams()` and calls `getOrCreateConversation(user.id, userId)`.
-- **Profile → Schedule (Lok Ye → Christina):** the Schedule Coffee button (alumni profiles only, students viewing) links to `paths.schedule(alumniId)` (`/schedule/a1`).
+- **Profile → Schedule (Lok Ye → Christina):** the Schedule Coffee Chat button (student profiles only, alumni viewing) links to `paths.schedule(studentId)` (`/schedule/s1`). Only alumni can open this route. This changed after prototype testing (requirement F-G5).
 - **Onboarding → Profile editing (Aidan → Lok Ye):** Aidan builds onboarding form sections (e.g. `WorkHistoryFields`) as components in `src/pages/auth/` that take `value` + `onChange` props, so Lok Ye's `/me/edit` page can reuse them.
 - **Sign up → Verify → Onboarding (Aidan):** `RequireAuth` automatically redirects unverified users to `/verify` and users who haven't finished onboarding to `/onboarding/<role>`.
 

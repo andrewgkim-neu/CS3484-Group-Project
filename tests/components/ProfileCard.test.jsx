@@ -5,7 +5,7 @@ import { ProfileCard } from '../../src/components'
 import { renderWithRouter } from '../helpers/renderApp'
 
 describe('ProfileCard', () => {
-  it('shows an alum’s name, title, company, major, and networking status', async () => {
+  it('F-D9: shows an alum’s name, title, company, major, and networking status', async () => {
     renderWithRouter(<ProfileCard user={await getUser('a1')} />)
     expect(screen.getByRole('heading', { name: 'Maria Gonzalez' })).toBeInTheDocument()
     expect(screen.getByText('Senior Software Engineer at Google')).toBeInTheDocument()
@@ -18,7 +18,7 @@ describe('ProfileCard', () => {
     expect(screen.getByText('Computer Science · Class of 2027')).toBeInTheDocument()
   })
 
-  it('links the name to the person’s profile page', async () => {
+  it('F-D9: links the name to the person’s profile page', async () => {
     renderWithRouter(<ProfileCard user={await getUser('a1')} />)
     expect(screen.getByRole('link', { name: 'Maria Gonzalez' })).toHaveAttribute(
       'href',

@@ -17,7 +17,7 @@ describe('Button', () => {
     expect(screen.getByRole('button')).toHaveAttribute('type', 'button')
   })
 
-  it('is disabled and marked busy while loading', async () => {
+  it('IR5: is disabled and marked busy while loading', async () => {
     const onClick = vi.fn()
     renderWithRouter(
       <Button loading onClick={onClick}>

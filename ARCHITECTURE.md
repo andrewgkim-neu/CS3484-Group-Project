@@ -1,6 +1,6 @@
 # Architecture Overview
 
-Northeastern Alumni Connection is a web app that connects Northeastern students with alumni for referrals, advice, and coffee chats. This document describes how the system is put together, so the team shares one vocabulary for the requirements that follow.
+AlumNU (Northeastern Alumni Connection) is a web app that connects Northeastern students with alumni for referrals, advice, and coffee chats. This document describes how the system is put together, so the team shares one vocabulary for the requirements that follow.
 
 ## 1. Platform and Technology Stack
 
